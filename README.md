@@ -9,7 +9,7 @@
 
 Buka `index.html` langsung di browser (butuh koneksi internet untuk CDN Pyodide & font).
 
-> **Catatan:** Pyodide membutuhkan beberapa detik loading pertama kali (mengunduh runtime Python + pandas ~10MB). Setelah itu semua komputasi berjalan lokal di browser.
+> **noted:** Pyodide membutuhkan beberapa detik loading pertama kali (mengunduh runtime Python + pandas). Setelah itu semua komputasi berjalan lokal di browser.
 
 ---
 
@@ -40,7 +40,7 @@ honda-ra621h-cpm/
 | UI / interaktivity | Vanilla **JavaScript** (ES2020) |
 | Visualisasi graf | **SVG** (built-in browser, no library) |
 | Styling | **CSS custom properties**, Google Fonts |
-| Build tool | — (tidak ada, zero-dependency) |
+| Build tool | (tidak ada, zero-dependency) |
 
 ---
 
@@ -92,7 +92,7 @@ Critical Path = node dengan Float = 0
 | Root nodes (in-degree = 0) | **16** |
 | Valid DAG (acyclic) | **✓ True** |
 | Subsystems | **19** |
-| Critical Path nodes | ~28 |
+| Critical Path nodes | 28 |
 
 ### Subsystem yang Dimodelkan
 - ICE – Internal Combustion Engine (V6 1.6L Turbo Hybrid)
@@ -139,42 +139,11 @@ Critical Path = node dengan Float = 0
 
 ## 🚀 Cara Menjalankan
 
-### Opsi 1: Langsung buka file
+# Langsung buka file
 ```bash
 # Cukup buka di browser (Chrome/Firefox/Edge)
 open index.html
 # atau double-click index.html
-```
-
-> ⚠️ Beberapa browser memblokir `fetch()` dari `file://`. Jika dataset tidak termuat, gunakan local server (opsi 2).
-
-### Opsi 2: Local HTTP server (direkomendasikan)
-```bash
-# Python 3
-cd honda-ra621h-cpm
-python -m http.server 8080
-# Buka: http://localhost:8080
-```
-
-```bash
-# Node.js
-npx serve .
-```
-
-```bash
-# PHP
-php -S localhost:8080
-```
-
-### Opsi 3: Deploy ke GitHub Pages
-```bash
-git init
-git add .
-git commit -m "feat: Honda RA621H CPM + DAG + Kahn's Algorithm"
-git branch -M main
-git remote add origin https://github.com/USERNAME/honda-ra621h-cpm.git
-git push -u origin main
-# Aktifkan GitHub Pages: Settings → Pages → Source: main / root
 ```
 
 ---
@@ -210,13 +179,3 @@ Semua node di atas memiliki **Float = 0** → mereka tidak boleh terlambat.
 
 ---
 
-## 👤 Author
-
-Proyek SDA 2025 — Honda RA621H F1 Assembly Scheduling
-Menggunakan data mesin hybrid turbo Formula 1 musim 2021 (WDC: Max Verstappen / Red Bull Racing Honda)
-
----
-
-## 📄 Lisensi
-
-MIT License — bebas digunakan untuk keperluan pendidikan.
