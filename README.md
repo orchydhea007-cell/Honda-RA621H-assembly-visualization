@@ -5,7 +5,7 @@
 
 ---
 
-## 🏎️ Demo
+## Demo
 
 Buka `index.html` langsung di browser (butuh koneksi internet untuk CDN Pyodide & font).
 
@@ -13,7 +13,7 @@ Buka `index.html` langsung di browser (butuh koneksi internet untuk CDN Pyodide 
 
 ---
 
-## 📂 Struktur Folder
+## Struktur Folder
 
 ```
 honda-ra621h-cpm/
@@ -23,7 +23,7 @@ honda-ra621h-cpm/
 ├── js/
 │   └── main.js             # JavaScript controller + Pyodide bridge
 ├── py/
-│   └── cpm_kahn.py         # 🐍 Python: Kahn's + CPM + pandas
+│   └── cpm_kahn.py         # Python: Kahn's + CPM + pandas
 ├── data/
 │   └── components.json     # Dataset 103 komponen Honda RA621H
 └── README.md
@@ -31,7 +31,7 @@ honda-ra621h-cpm/
 
 ---
 
-## ⚙️ Teknologi
+## Teknologi
 
 | Komponen | Teknologi |
 |---|---|
@@ -44,7 +44,7 @@ honda-ra621h-cpm/
 
 ---
 
-## 🧠 Algoritma yang Diimplementasikan
+## Algoritma yang Diimplementasikan
 
 ### 1. Kahn's Topological Sort (BFS)
 ```
@@ -83,7 +83,7 @@ Critical Path = node dengan Float = 0
 
 ---
 
-## 📊 Dataset — Honda RA621H
+## Dataset — Honda RA621H
 
 | Metrik | Nilai |
 |---|---|
@@ -112,7 +112,7 @@ Critical Path = node dengan Float = 0
 
 ---
 
-## 🖥️ Fitur UI
+## Fitur UI
 
 ### Tab 1 — CPM & DAG
 - **SVG DAG** interaktif: pan (drag), zoom (scroll/tombol), fit-to-view
@@ -137,7 +137,7 @@ Critical Path = node dengan Float = 0
 
 ---
 
-## 🚀 Cara Menjalankan
+## Cara Menjalankan
 
 # Langsung buka file
 ```bash
@@ -148,7 +148,7 @@ open index.html
 
 ---
 
-## 📦 Dependencies
+## Dependencies
 
 Semua diambil dari CDN — **tidak perlu `npm install`**:
 
@@ -161,7 +161,7 @@ Semua diambil dari CDN — **tidak perlu `npm install`**:
 
 ---
 
-## 🔬 Penjelasan Konsep CPM
+## Penjelasan Konsep CPM
 
 **Critical Path Method (CPM)** adalah teknik manajemen proyek untuk menemukan urutan tugas terpanjang (critical path) yang menentukan durasi minimum proyek.
 
